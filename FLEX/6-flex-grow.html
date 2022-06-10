@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .item{
+            background-color: pink;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .flexgrow0{
+            flex-grow: 0;
+        }
+        .flexgrow1{
+            flex-grow: 1;
+        }
+        .flexgrow2{
+            flex-grow: 2;
+        }
+        .flexgrow3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Grow 0</h1>
+    <div class="flex-container flex">
+        <div class="item flexgrow0">A</div>
+        <div class="item flexgrow0">B</div>
+        <div class="item flexgrow0">C</div>
+        <div class="item flexgrow0">D</div>
+    </div>
+    <h1>Flex Grow 0 e 1</h1>
+    <div class="flex-container flex">
+        <div class="item flexgrow0">A</div>
+        <div class="item flexgrow1">B</div>
+        <div class="item flexgrow0">C</div>
+        <div class="item flexgrow1">D</div>
+    </div>
+
+    <h1>Flex Grow 1</h1>
+    <div class="flex-container">
+        <div class="item flexgrow1">A</div>
+        <div class="item flexgrow1">B</div>
+        <div class="item flexgrow1">C</div>
+        <div class="item flexgrow1">D</div>
+    </div>
+
+    <h1>Flex Grow 3 2 1 0</h1>
+    <div class="flex-container">
+        <div class="item flexgrow3">A</div>
+        <div class="item flexgrow2">B</div>
+        <div class="item flexgrow1">C</div>
+        <div class="item flexgrow0">D</div>
+    </div>
+
+    <h1>Flex Grow 2</h1>
+    <div class="flex-container">
+        <div class="item flexgrow2">A123</div>
+        <div class="item flexgrow2">B</div>
+        <div class="item flexgrow2">C123456</div>
+        <div class="item flexgrow2">D</div>
+    </div>
+</body>
+</html>

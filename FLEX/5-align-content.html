@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+    <style>
+        .container{
+            height: 500px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: pink;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stretch</h1>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Fermentum leo vel orci porta non. </div>
+        <div class="item">Amet mattis vulputate enim nulla aliquet porttitor. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+        <div class="item">Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.</div>
+        <div class="item">Vitae justo eget magna fermentum iaculis. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+    </div>
+
+    <h1>Center</h1>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Fermentum leo vel orci porta non. </div>
+        <div class="item">Amet mattis vulputate enim nulla aliquet porttitor. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+        <div class="item">Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.</div>
+        <div class="item">Vitae justo eget magna fermentum iaculis. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+    </div>
+
+    <h1>Flex-Start</h1>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Fermentum leo vel orci porta non. </div>
+        <div class="item">Amet mattis vulputate enim nulla aliquet porttitor. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+        <div class="item">Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.</div>
+        <div class="item">Vitae justo eget magna fermentum iaculis. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+    </div>
+
+    <h1>Flex-End</h1>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Fermentum leo vel orci porta non. </div>
+        <div class="item">Amet mattis vulputate enim nulla aliquet porttitor. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+        <div class="item">Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.</div>
+        <div class="item">Vitae justo eget magna fermentum iaculis. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+    </div>
+
+    <h1>Space Around</h1>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Fermentum leo vel orci porta non. </div>
+        <div class="item">Amet mattis vulputate enim nulla aliquet porttitor. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+        <div class="item">Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.</div>
+        <div class="item">Vitae justo eget magna fermentum iaculis. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+    </div>
+
+    <h1>Space Between</h1>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Fermentum leo vel orci porta non. </div>
+        <div class="item">Amet mattis vulputate enim nulla aliquet porttitor. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+        <div class="item">Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.</div>
+        <div class="item">Vitae justo eget magna fermentum iaculis. </div>
+        <div class="item">Metus aliquam eleifend mi in. </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+        }
+        .item{
+            flex: 1;
+            margin: 5px;
+            background-color: pink;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .order1{
+            order:1;
+        }
+        .order2{
+            order:2;
+        }
+        .order3{
+            order:3;
+        }
+        .direction{
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Order: 0</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <p>Order: 1</p>
+    <div class="container">
+        <div class="item order2">1</div>
+        <div class="item order3">2</div>
+        <div class="item">3</div>
+        <div class="item order1">4</div>
+    </div>
+
+    <p>Order: 0 Column</p>
+    <div class="container direction">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <p>Order: 1 Column</p>
+    <div class="container direction">
+        <div class="item order2">1</div>
+        <div class="item order3">2</div>
+        <div class="item">3</div>
+        <div class="item order1">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <style>
+        .flex-container{
+            max-width: 500px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: pink;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+        .bauto{
+            flex-basis: auto;
+        }
+        .bzero{
+            flex-basis: 0;
+        }
+        .flexgrow1{
+            flex-grow: 1;
+        }
+        .flexgrow2{
+            flex-grow: 2;
+        }
+        .w100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLEX</h1> 
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2BBB</div>
+        <div class="item">3</div>
+        <div class="item">45</div>
+    </div>
+    <h1>Flex Basis 0</h1>
+    <div class="flex-container">
+        <div class="item bzero flexgrow1">1123456789123</div>
+        <div class="item bzero flexgrow1">2BBB</div>
+        <div class="item bzero flexgrow1">3</div>
+        <div class="item bzero flexgrow1">45</div>
+    </div>
+
+    <h1>Flex Basis + width </h1>
+    <div class="flex-container">
+        <div class="item w100 flexgrow1">1123456789123</div>
+        <div class="item w100">2BBB</div>
+        <div class="item w100">3</div>
+        <div class="item w100">45</div>
+    </div>
+
+    
+</body>
+</html>
